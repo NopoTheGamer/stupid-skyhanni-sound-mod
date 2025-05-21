@@ -1,6 +1,6 @@
-package com.example.mixins.transformers.modidhider;
+package com.github.nopothegamer.stupidskyhannisoundmod.mixins.transformers.modidhider;
 
-import com.example.ExampleMod;
+import com.github.nopothegamer.stupidskyhannisoundmod.stupid-skyhanni-sound-mod;
 import net.minecraftforge.fml.common.network.handshake.FMLHandshakeMessage;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -20,7 +20,7 @@ public abstract class MixinFMLHandshakeMessageModList {
 
     @Inject(method = "<init>(Ljava/util/List;)V", at = @At(value = "RETURN"))
     public void onInitLast(List modList, CallbackInfo ci) {
-        if (!ExampleMod.HIDE_MOD_ID) return;
-        modList().remove(ExampleMod.MOD_ID);
+        if (!stupid-skyhanni-sound-mod.HIDE_MOD_ID) return;
+        modList().remove(stupid-skyhanni-sound-mod.MOD_ID);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.config
+package com.github.nopothegamer.stupidskyhannisoundmod.config
 
 import at.hannibal2.skyhanni.config.core.config.Position
 import at.hannibal2.skyhanni.deps.moulconfig.annotations.ConfigEditorBoolean
